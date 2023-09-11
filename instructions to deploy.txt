@@ -1,0 +1,15 @@
+1. go to the vite.config file and add a line under export default that incudes
+the repo name for example 
+base: '/REPO-NAME/',
+//Example below
+
+export default defineConfig({
+  base: '/VueTaskList/',
+  plugins: [vue()]
+})
+
+//Continue instructions
+2. Then use the command npm run build
+3. Run the command git add dist -f
+4.git commit -m "adding dist"
+5.git subtree push --prefix dist origin gh-pages
